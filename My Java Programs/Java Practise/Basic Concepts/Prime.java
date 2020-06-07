@@ -1,0 +1,28 @@
+package practise;
+import java.util.*;
+public class Prime
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		int n,c=0,i,j;
+		n=sc.nextInt();
+		for(i=2;i<=n;i++)
+		{
+			c=0;
+			for(j=1;j<=i;j++)
+			{
+				if(i%j==0)
+				{
+					c++;
+				}	
+			}
+		if(c==2)
+		{
+			System.out.println(i);
+		}
+
+		}
+		
+	}
+}
